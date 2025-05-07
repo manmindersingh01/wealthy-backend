@@ -1,0 +1,25 @@
+{
+  "name": "hono-drizzle-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:generate": "drizzle-kit generate:sqlite",
+    "db:push": "drizzle-kit push:sqlite"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.8.2",
+    "@types/bcryptjs": "^2.4.6",
+    "bcryptjs": "^3.0.2",
+    "drizzle-orm": "^0.29.3",
+    "hono": "^4.0.5",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240208.0",
+    "drizzle-kit": "^0.20.14",
+    "typescript": "^5.3.3",
+    "wrangler": "^3.28.1"
+  }
+}
