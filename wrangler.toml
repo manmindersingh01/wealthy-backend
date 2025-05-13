@@ -6,3 +6,4 @@ compatibility_date = "2024-02-20"
 binding = "DB"
 database_name = "hono_drizzle_db"
 database_id = "d36b5206-a4c4-4102-9f53-25b265dd17b2" 
+ 

@@ -10,6 +10,7 @@ export const requireAuth = async (c: Context, next: Next) => {
   try {
     // Get token from header
     const authHeader = c.req.header("Authorization");
+    console.log(authHeader);
     if (!authHeader || !authHeader.startsWith("Bearer ")) {
       throw new HTTPException(401, { message: "No token provided" });
     }
